@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap'); */
 
 html {
   height: 100%;
@@ -28,6 +28,7 @@ body {
 
 .card img {
   border-radius:10px;
+  width: 100%;
 }
 
 .card article h3 {
@@ -60,17 +61,34 @@ body {
 .card .info_bar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items:stretch;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 80%;
 }
 
+.card .info_bar * {
+  display: flex;
+  align-items: center;
+}
+
 .card .info_bar .price {
+  display:flex;
+  align-items: center;
   color: #00FFF8;
 }
 
+.card .info_bar .price span {
+  display: block;
+}
+
+.card .info_bar .remaining_time span {
+  display: block;
+}
+
 .card .info_bar .remaining_time {
+    display:flex;
+    align-items: center;
     color: #8BACD9;
 }
 
