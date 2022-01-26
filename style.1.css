@@ -1,0 +1,113 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap'); */
+
+html {
+  height: 100%;
+}
+
+body {
+
+  height: 100%;
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  background-color: hsl(217, 54%, 11%);
+  color: #8BACD9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  width: 300px;
+  box-shadow: 0px 10px 71px -12px #000000;
+  padding: 24px;
+  border-radius: 15px
+}
+
+.card img {
+  border-radius:10px;
+  width: 100%;
+}
+
+.card article h3 {
+  color: white;
+  font-weight: 600;
+}
+
+.card article p {
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.card .author {
+  align-items: center;
+}
+
+
+.card .author .avatar {
+  background-image: url(images/image-avatar.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+  height: 30px;
+  width: 30px;
+  border-radius: 25px;
+  border: white 1px solid;
+  margin-right: 20px;
+}
+
+.card .info_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items:stretch;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 80%;
+}
+
+.card .info_bar .price {
+  display:flex;
+  color: #00FFF8;
+}
+
+.card .info_bar .price span {
+  display: block;
+}
+
+.card .info_bar .remaining_time span {
+  display: block;
+}
+
+.card .info_bar .remaining_time {
+    display:flex;
+    color: #8BACD9;
+}
+
+.card .info_bar .price::before {
+  content: url(images/icon-ethereum.svg);
+  margin-top: -5px;
+  margin-right: 5px;
+  padding-top:5px;
+  height: 24px;
+}
+
+.card .info_bar .remaining_time::before {
+  content: url(images/icon-clock.svg);
+  margin-right: 5px;
+  height: 24px;
+}
+
+.card .author {
+  display: flex;
+  justify-content: left;
+  padding-top:20px;
+  padding-bottom:10px;
+  border-top: hsl(215, 32%, 27%) 1px solid;
+  font-size: 80%;
+}
+
+.card .author .name .author_name {
+  color: white;
+}
